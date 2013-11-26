@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ributer</string>
+    <string name="action_settings">Settings</string>
+<!--     <string name="hello_world">Hello world!</string> -->
+<!-- 	<string name="button">Button</string> -->
+
+    <string name="really_shutdown">Really Shutdown?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="not_rooted">Your phone needs to be rooted and this app needs to be allowed to run a superuser command.</string>
+    <string name="what">What?</string>
+    <string name="rooting_url">http://en.wikipedia.org/wiki/Rooting_(Android_OS)</string>
+    
+    
+	<item type="id" name="button"> Button String </item>
+	<string name="version">Ributer 1.1 Copyright 2013 by Joielechong</string>
+	<string name="website_first">http://belajarotodidak.blogspot.com</string>
+	<string name="visit_website">Visit Website</string>
+	
+	<string name="force_shutdown">Force Shutdown</string>
+	<string name="force_reboot">Force Reboot</string>
+	<string name="hot_boot">Hot Boot</string>
+	<string name="force_reboot_recovery">Reboot Recovery</string>
+	<string name="really_force_reboot_recovery">Sure to Reboot Recovery?</string>
+	
+	<string name="really_reboot">Sure to Reboot?</string>
+	<string name="really_hot_boot">Sure to Hot Boot?</string>
+	
+	<style name="Divider">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">2dp</item>
+	    <item name="android:background">@android:color/black</item>
+	</style>
+    
+</resources>

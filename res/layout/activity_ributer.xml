@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|end"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context=".RibuterActivity" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingTop="25dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/force_shutdown"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:background="@drawable/shutdown"
+                    android:layout_weight="1"
+                     />
+
+				<TextView
+				    android:id="@+id/string_force_shutdown"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center_horizontal"
+				    android:clickable="false"
+				    android:text="@string/force_shutdown"
+				    android:textAppearance="?android:attr/textAppearanceMedium"
+				    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/force_reboot_recovery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:background="@drawable/recovery"
+                    android:layout_weight="1"/>
+                
+                <TextView
+                    android:id="@+id/string_force_reboot_recovery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:text="@string/force_reboot_recovery"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/force_reboot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:background="@drawable/reboot"
+                    android:layout_weight="1" />
+                
+                <TextView
+                    android:id="@+id/string_force_reboot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:text="@string/force_reboot"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/hot_boot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:background="@drawable/hotboot"
+                    android:layout_weight="1" />
+                
+                <TextView
+                    android:id="@+id/string_hot_boot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:text="@string/hot_boot"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+	<View style="@style/Divider"/>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="6"
+	    android:background="#CCFFFF"
+	    android:baselineAligned="true"
+	    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/version"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/version"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textStyle="bold" />
+
+	    <Button
+	        android:id="@+id/visit_web"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/visit_website"
+	        android:textStyle="bold"
+	        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	</LinearLayout>
+
+</LinearLayout>
